@@ -4,6 +4,8 @@ import rspack from '@rspack/core';
 import {getSharedDependencies} from 'mobile-sdk';
 import path from 'node:path';
 import {withZephyr} from 'zephyr-repack-plugin';
+import {ReanimatedPlugin} from '@callstack/repack-plugin-reanimated';
+import {NativeWindPlugin} from '@callstack/repack-plugin-nativewind';
 
 /**
  * This env variable shows if bundle is standalone and eager should be enabled in Module federation Plugin config.
@@ -210,12 +212,21 @@ export default env => {
          * React, React Native and React Navigation should be provided here because there should be only one instance of these modules.
          * Their names are used to match requested modules in this compilation.
          */
-        shared: getSharedDependencies({eager: STANDALONE}),
+        shared: {
+          ...getSharedDependencies({eager: STANDALONE}),
+          'react-native-css-interop/': {
+            singleton: true,
+            eager: false,
+            requiredVersion: '*',
+          },
+        },
       }),
       // silence missing @react-native-masked-view optionally required by @react-navigation/elements
       new rspack.IgnorePlugin({
         resourceRegExp: /^@react-native-masked-view/,
       }),
+      new ReanimatedPlugin(),
+      new NativeWindPlugin(),
     ],
   };
 

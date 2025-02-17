@@ -207,7 +207,14 @@ export default env => {
          * React, React Native and React Navigation should be provided here because there should be only one instance of these modules.
          * Their names are used to match requested modules in this compilation.
          */
-        shared: getSharedDependencies({eager: true}),
+        shared: {
+          ...getSharedDependencies({eager: true}),
+          'react-native-css-interop/': {
+            singleton: true,
+            eager: true,
+            requiredVersion: '*',
+          },
+        },
       }),
       // silence missing @react-native-masked-view optionally required by @react-navigation/elements
       new rspack.IgnorePlugin({

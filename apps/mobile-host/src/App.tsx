@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {LogBox} from 'react-native';
+import {LogBox, Text, View} from 'react-native';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {
@@ -27,6 +27,9 @@ const App = () => {
 
   return (
     <>
+      <View testID="nativewind-host" className="p-24 bg-blue-500">
+        <Text className="text-red-500">I am supposed to be styled!</Text>
+      </View>
       {isSplashVisible ? (
         <AnimatedBootSplash onAnimationEnd={hideSplashScreen} />
       ) : null}

@@ -1,5 +1,5 @@
 import React from 'react';
-import {FlatList, StyleSheet, View} from 'react-native';
+import {FlatList, StyleSheet, Text, View} from 'react-native';
 
 import {
   ActivityIndicator,
@@ -20,6 +20,12 @@ const HomeScreen = ({onProductPress}: Props) => {
   const styles = useStyles();
 
   const {data, isLoading} = useProducts();
+
+  return (
+    <View testID="nativewind-inventory-home" className="p-24 bg-blue-500">
+      <Text className="text-red-500">I am supposed to be styled!</Text>
+    </View>
+  );
 
   return (
     <ModuleBoundary withTopRadius color={colors.moduleBoundaries.inventory}>
