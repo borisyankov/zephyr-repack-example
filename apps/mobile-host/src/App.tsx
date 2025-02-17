@@ -10,6 +10,8 @@ import {
   ThemeProvider,
 } from 'mobile-core';
 
+import '../global.css';
+
 import AnimatedBootSplash from './components/AnimatedBootSplash';
 import MainNavigator from './navigation/MainNavigator';
 

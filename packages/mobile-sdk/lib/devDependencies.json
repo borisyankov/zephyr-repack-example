@@ -24,6 +24,11 @@
     "version": "5.0.0-rc.10",
     "devOnly": true
   },
+  "@callstack/repack-plugin-nativewind": {
+    "name": "@callstack/repack-plugin-nativewind",
+    "version": "5.0.0-rc.10",
+    "devOnly": true
+  },
   "@react-native/babel-preset": {
     "name": "@react-native/babel-preset",
     "version": "0.76.6",
@@ -74,6 +79,11 @@
     "version": "^18.3.0",
     "devOnly": true
   },
+  "autoprefixer": {
+    "name": "autoprefixer",
+    "version": "^10.4.20",
+    "devOnly": true
+  },
   "babel-jest": {
     "name": "babel-jest",
     "version": "^29.6.3",
@@ -92,6 +102,16 @@
   "jest": {
     "name": "jest",
     "version": "^29.6.3",
+    "devOnly": true
+  },
+  "postcss": {
+    "name": "postcss",
+    "version": "^8.5.2",
+    "devOnly": true
+  },
+  "postcss-loader": {
+    "name": "postcss-loader",
+    "version": "^8.1.1",
     "devOnly": true
   },
   "react-test-renderer": {
