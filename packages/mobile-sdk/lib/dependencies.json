@@ -19,6 +19,10 @@
     "name": "react-native-paper",
     "version": "5.12.5"
   },
+  "react-native-reanimated": {
+    "name": "react-native-reanimated",
+    "version": "3.16.7"
+  },
   "react-native-safe-area-context": {
     "name": "react-native-safe-area-context",
     "version": "4.12.0"

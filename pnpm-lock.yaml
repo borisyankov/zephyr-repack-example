@@ -99,6 +99,9 @@ importers:
       react-native-paper:
         specifier: 5.12.5
         version: 5.12.5(patch_hash=uhcd3rpprscdp2okr45hgmmtse)(react-native-safe-area-context@4.12.0(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native-vector-icons@10.2.0)(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
+      react-native-reanimated:
+        specifier: 3.16.7
+        version: 3.16.7(@babel/core@7.26.0)(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       react-native-safe-area-context:
         specifier: 4.12.0
         version: 4.12.0(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
@@ -127,6 +130,9 @@ importers:
       '@callstack/repack':
         specifier: 5.0.0-rc.10
         version: 5.0.0-rc.10(@babel/core@7.26.0)(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1)
+      '@callstack/repack-plugin-reanimated':
+        specifier: 5.0.0-rc.10
+        version: 5.0.0-rc.10(@babel/core@7.26.0)(@callstack/repack@5.0.0-rc.10(@babel/core@7.26.0)(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1))
       '@react-native-community/cli':
         specifier: ^15.1.2
         version: 15.1.3(typescript@5.7.3)
@@ -238,6 +244,9 @@ importers:
       react-native-paper:
         specifier: 5.12.5
         version: 5.12.5(patch_hash=uhcd3rpprscdp2okr45hgmmtse)(react-native-safe-area-context@4.12.0(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native-vector-icons@10.2.0)(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
+      react-native-reanimated:
+        specifier: 3.16.7
+        version: 3.16.7(@babel/core@7.26.0)(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       react-native-safe-area-context:
         specifier: 4.12.0
         version: 4.12.0(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
@@ -266,6 +275,9 @@ importers:
       '@callstack/repack':
         specifier: 5.0.0-rc.10
         version: 5.0.0-rc.10(@babel/core@7.26.0)(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1)
+      '@callstack/repack-plugin-reanimated':
+        specifier: 5.0.0-rc.10
+        version: 5.0.0-rc.10(@babel/core@7.26.0)(@callstack/repack@5.0.0-rc.10(@babel/core@7.26.0)(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1))
       '@react-native-community/cli':
         specifier: ^15.1.2
         version: 15.1.3(typescript@5.7.3)
@@ -336,8 +348,8 @@ importers:
         specifier: ^5.95.0
         version: 5.97.1
       zephyr-repack-plugin:
-        specifier: 0.0.0-canary-20250130213446
-        version: 0.0.0-canary-20250130213446(encoding@0.1.13)(webpack@5.97.1)
+        specifier: 0.0.34
+        version: 0.0.34(encoding@0.1.13)(webpack@5.97.1)
 
   apps/mobile-e2e: {}
 
@@ -382,6 +394,9 @@ importers:
       react-native-paper:
         specifier: 5.12.5
         version: 5.12.5(patch_hash=uhcd3rpprscdp2okr45hgmmtse)(react-native-safe-area-context@4.12.0(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native-vector-icons@10.2.0)(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
+      react-native-reanimated:
+        specifier: 3.16.7
+        version: 3.16.7(@babel/core@7.26.0)(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       react-native-safe-area-context:
         specifier: 4.12.0
         version: 4.12.0(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
@@ -416,6 +431,9 @@ importers:
       '@callstack/repack':
         specifier: 5.0.0-rc.10
         version: 5.0.0-rc.10(@babel/core@7.26.0)(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1)
+      '@callstack/repack-plugin-reanimated':
+        specifier: 5.0.0-rc.10
+        version: 5.0.0-rc.10(@babel/core@7.26.0)(@callstack/repack@5.0.0-rc.10(@babel/core@7.26.0)(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1))
       '@react-native-community/cli':
         specifier: ^15.1.2
         version: 15.1.3(typescript@5.7.3)
@@ -539,6 +557,9 @@ importers:
       react-native-paper:
         specifier: 5.12.5
         version: 5.12.5(patch_hash=uhcd3rpprscdp2okr45hgmmtse)(react-native-safe-area-context@4.12.0(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native-vector-icons@10.2.0)(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
+      react-native-reanimated:
+        specifier: 3.16.7
+        version: 3.16.7(@babel/core@7.26.0)(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       react-native-safe-area-context:
         specifier: 4.12.0
         version: 4.12.0(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
@@ -567,6 +588,9 @@ importers:
       '@callstack/repack':
         specifier: 5.0.0-rc.10
         version: 5.0.0-rc.10(@babel/core@7.26.0)(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1)
+      '@callstack/repack-plugin-reanimated':
+        specifier: 5.0.0-rc.10
+        version: 5.0.0-rc.10(@babel/core@7.26.0)(@callstack/repack@5.0.0-rc.10(@babel/core@7.26.0)(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1))
       '@react-native-community/cli':
         specifier: ^15.1.2
         version: 15.1.3(typescript@5.7.3)
@@ -681,6 +705,9 @@ importers:
       react-native-paper:
         specifier: 5.12.5
         version: 5.12.5(patch_hash=uhcd3rpprscdp2okr45hgmmtse)(react-native-safe-area-context@4.12.0(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native-vector-icons@10.2.0)(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
+      react-native-reanimated:
+        specifier: 3.16.7
+        version: 3.16.7(@babel/core@7.26.0)(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       react-native-safe-area-context:
         specifier: 4.12.0
         version: 4.12.0(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
@@ -709,6 +736,9 @@ importers:
       '@callstack/repack':
         specifier: 5.0.0-rc.10
         version: 5.0.0-rc.10(@babel/core@7.26.0)(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1)
+      '@callstack/repack-plugin-reanimated':
+        specifier: 5.0.0-rc.10
+        version: 5.0.0-rc.10(@babel/core@7.26.0)(@callstack/repack@5.0.0-rc.10(@babel/core@7.26.0)(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1))
       '@react-native-community/cli':
         specifier: ^15.1.2
         version: 15.1.3(typescript@5.7.3)
@@ -1606,6 +1636,13 @@ packages:
     peerDependenciesMeta:
       '@react-native-community/cli-server-api':
         optional: true
+
+  '@callstack/repack-plugin-reanimated@5.0.0-rc.10':
+    resolution: {integrity: sha512-P6CVAsESaEwpgSLELKxxmI/3y1DYq2H0d16M0BCTNsAAvbwu+mg+sloH9oyOf3NJpZKuZPFZ8ucuoajbEJaYkA==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@babel/core': ^7.20
+      '@callstack/repack': ^5.0.0-rc.10
 
   '@callstack/repack@5.0.0-rc.10':
     resolution: {integrity: sha512-B+9pcWVrPRD+foy9X8rk3cpXSk3tY4qT9ZkvUNKeN74bQp3qZI6kL5gd83dmkemsIHaNKopleP8R/3Q/YqGKgg==}
@@ -6455,6 +6492,13 @@ packages:
       react-native-safe-area-context: '*'
       react-native-vector-icons: '*'
 
+  react-native-reanimated@3.16.7:
+    resolution: {integrity: sha512-qoUUQOwE1pHlmQ9cXTJ2MX9FQ9eHllopCLiWOkDkp6CER95ZWeXhJCP4cSm6AD4jigL5jHcZf/SkWrg8ttZUsw==}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+      react: '*'
+      react-native: '*'
+
   react-native-safe-area-context@4.12.0:
     resolution: {integrity: sha512-ukk5PxcF4p3yu6qMZcmeiZgowhb5AsKRnil54YFUUAXVIS7PJcMHGGC+q44fCiBg44/1AJk5njGMez1m9H0BVQ==}
     peerDependencies:
@@ -7672,9 +7716,6 @@ packages:
   zephyr-agent@0.0.0-canary-20241122175815:
     resolution: {integrity: sha512-2O8BYLaxsSzZh0Ry6wenUzkOMhpyqrYAwzZLpkFlvBEUkSk4V9Ay0LZCo8DZ6+az+i5fGBF5iew0bbyNWMHBGQ==}
 
-  zephyr-agent@0.0.0-canary-20250130213446:
-    resolution: {integrity: sha512-GT/y8OpvI9GsfC/TNWprxjRdErzfW+ZgmvA8cRY/riQVb0GImhfTIusxMQZRBDzITssxQb4tIK8yJie9uo76cA==}
-
   zephyr-agent@0.0.34:
     resolution: {integrity: sha512-q5cq7RCvQY4cmbee+GC3rSPV4NYD3CY/rwsWgAkgHAsS0SaOHXQ9Ns2V/6QV+n0WN9p1rBBQGxWGlSkHxlptNA==}
 
@@ -7684,14 +7725,8 @@ packages:
   zephyr-edge-contract@0.0.0-canary-20241122175815:
     resolution: {integrity: sha512-tFkhBh1ISSFp5q3yQcKG1Bqi5jOEr2MifxLB0E2AdsG0SsUooSHwKYBNNyJIgsRa3v2xvthBV2OVcA/QX5ha7w==}
 
-  zephyr-edge-contract@0.0.0-canary-20250130213446:
-    resolution: {integrity: sha512-JKpU3RoAOFJegE+awXG4nfAJcA9trs6ydHrD/K7SM1nQShSyokPjzP9S7uxlZlxK9eDa/qWLog0UxKXKQuhyHg==}
-
   zephyr-edge-contract@0.0.34:
     resolution: {integrity: sha512-x4t+ghhbMii3a/pCFApDLUNJ/iA59tRKExcgVgbhXCUUAlLOMCwLxlZbfOJdASBy098dJT8GnaqzTzqqqY2oEA==}
-
-  zephyr-repack-plugin@0.0.0-canary-20250130213446:
-    resolution: {integrity: sha512-jkXNB2wX2CAx/Bsm3EwNU8Jjzf1Y7S3874j5V2mRGGpgJvGSx9XJiCk+QnC7tS8SC3eGq4ohoWnpRH+00F/ngA==}
 
   zephyr-repack-plugin@0.0.34:
     resolution: {integrity: sha512-NAcGgJAZywcfwSTgatOsRzPzBIRMK/D4II1n+/OdGkTO1gN4cvFzu0K+5YF0qHx3ukj0rpQBz37ckiCC8+1B2Q==}
@@ -7701,9 +7736,6 @@ packages:
 
   zephyr-xpack-internal@0.0.0-canary-20241122175815:
     resolution: {integrity: sha512-aH3mvSnjXpNtdCHNmJN5Zmv1J4+4qJ7Uv9d+T8JhqZNCVC5OsI9w0g0MIymRfaJnHcdWjjZCryIynaDLWqnxaA==}
-
-  zephyr-xpack-internal@0.0.0-canary-20250130213446:
-    resolution: {integrity: sha512-bggGBBpq8sJpXCOre9v2/6jmQufwyxz6Aks1a946p/Fn9tz1ZX/BTxArqUwqOTtk8apabC/GcxUe26BPKP1JAg==}
 
   zephyr-xpack-internal@0.0.34:
     resolution: {integrity: sha512-vDOIY0tttUy5xJjdeyZqHNCcq3N59Dq/Ky61xaNX/NmKZkZc2qfdGgTwFFA38CxyNnNjd8wYQAGQ/uLIO6jEsA==}
@@ -8676,6 +8708,11 @@ snapshots:
       - bufferutil
       - supports-color
       - utf-8-validate
+
+  '@callstack/repack-plugin-reanimated@5.0.0-rc.10(@babel/core@7.26.0)(@callstack/repack@5.0.0-rc.10(@babel/core@7.26.0)(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1))':
+    dependencies:
+      '@babel/core': 7.26.0
+      '@callstack/repack': 5.0.0-rc.10(@babel/core@7.26.0)(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1)
 
   '@callstack/repack@5.0.0-rc.10(@babel/core@7.26.0)(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.7.3)(webpack@5.97.1))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.3))(@rspack/core@1.2.2(@swc/helpers@0.5.15))(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1)':
     dependencies:
@@ -14815,6 +14852,25 @@ snapshots:
       react-native-vector-icons: 10.2.0
       use-latest-callback: 0.1.11(react@18.3.1)
 
+  react-native-reanimated@3.16.7(@babel/core@7.26.0)(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1):
+    dependencies:
+      '@babel/core': 7.26.0
+      '@babel/plugin-transform-arrow-functions': 7.25.9(@babel/core@7.26.0)
+      '@babel/plugin-transform-class-properties': 7.25.9(@babel/core@7.26.0)
+      '@babel/plugin-transform-classes': 7.25.9(@babel/core@7.26.0)
+      '@babel/plugin-transform-nullish-coalescing-operator': 7.26.6(@babel/core@7.26.0)
+      '@babel/plugin-transform-optional-chaining': 7.25.9(@babel/core@7.26.0)
+      '@babel/plugin-transform-shorthand-properties': 7.25.9(@babel/core@7.26.0)
+      '@babel/plugin-transform-template-literals': 7.25.9(@babel/core@7.26.0)
+      '@babel/plugin-transform-unicode-regex': 7.25.9(@babel/core@7.26.0)
+      '@babel/preset-typescript': 7.26.0(@babel/core@7.26.0)
+      convert-source-map: 2.0.0
+      invariant: 2.2.4
+      react: 18.3.1
+      react-native: 0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1)
+    transitivePeerDependencies:
+      - supports-color
+
   react-native-safe-area-context@4.12.0(react-native@0.76.6(patch_hash=r7erh76accgrd473k2mif64jkq)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.18)(encoding@0.1.13)(react@18.3.1))(react@18.3.1):
     dependencies:
       react: 18.3.1
@@ -16226,28 +16282,6 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  zephyr-agent@0.0.0-canary-20250130213446(encoding@0.1.13):
-    dependencies:
-      cloudflare: 3.5.0(encoding@0.1.13)
-      debug: 4.4.0
-      git-url-parse: 15.0.0
-      is-ci: 3.0.1
-      jose: 5.9.6
-      node-persist: 4.0.4
-      open: 10.1.0
-      socket.io-client: 4.8.1
-      tslib: 2.8.1
-      uuid: 8.3.2
-      zephyr-edge-contract: 0.0.0-canary-20250130213446
-    optionalDependencies:
-      wrangler: 3.103.2
-    transitivePeerDependencies:
-      - '@cloudflare/workers-types'
-      - bufferutil
-      - encoding
-      - supports-color
-      - utf-8-validate
-
   zephyr-agent@0.0.34(encoding@0.1.13):
     dependencies:
       cloudflare: 3.5.0(encoding@0.1.13)
@@ -16278,25 +16312,9 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  zephyr-edge-contract@0.0.0-canary-20250130213446:
-    dependencies:
-      tslib: 2.8.1
-
   zephyr-edge-contract@0.0.34:
     dependencies:
       tslib: 2.8.1
-
-  zephyr-repack-plugin@0.0.0-canary-20250130213446(encoding@0.1.13)(webpack@5.97.1):
-    dependencies:
-      zephyr-agent: 0.0.0-canary-20250130213446(encoding@0.1.13)
-      zephyr-xpack-internal: 0.0.0-canary-20250130213446(encoding@0.1.13)(webpack@5.97.1)
-    transitivePeerDependencies:
-      - '@cloudflare/workers-types'
-      - bufferutil
-      - encoding
-      - supports-color
-      - utf-8-validate
-      - webpack
 
   zephyr-repack-plugin@0.0.34(encoding@0.1.13)(webpack@5.97.1):
     dependencies:
@@ -16349,21 +16367,6 @@ snapshots:
       - uglify-js
       - utf-8-validate
       - webpack-cli
-
-  zephyr-xpack-internal@0.0.0-canary-20250130213446(encoding@0.1.13)(webpack@5.97.1):
-    dependencies:
-      '@module-federation/automatic-vendor-federation': 1.2.1(webpack@5.97.1)
-      is-ci: 3.0.1
-      tslib: 2.8.1
-      zephyr-agent: 0.0.0-canary-20250130213446(encoding@0.1.13)
-      zephyr-edge-contract: 0.0.0-canary-20250130213446
-    transitivePeerDependencies:
-      - '@cloudflare/workers-types'
-      - bufferutil
-      - encoding
-      - supports-color
-      - utf-8-validate
-      - webpack
 
   zephyr-xpack-internal@0.0.34(encoding@0.1.13)(webpack@5.97.1):
     dependencies:

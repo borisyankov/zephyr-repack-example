@@ -5,6 +5,7 @@ import rspack from '@rspack/core';
 import {getSharedDependencies} from 'mobile-sdk';
 import path from 'node:path';
 import {withZephyr} from 'zephyr-repack-plugin';
+import {ReanimatedPlugin} from '@callstack/repack-plugin-reanimated';
 
 const dirname = Repack.getDirname(import.meta.url);
 const {resolve} = createRequire(import.meta.url);
@@ -211,6 +212,7 @@ export default env => {
       new rspack.IgnorePlugin({
         resourceRegExp: /^@react-native-masked-view/,
       }),
+      new ReanimatedPlugin(),
     ],
   };
 

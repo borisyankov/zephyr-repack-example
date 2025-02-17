@@ -19,6 +19,11 @@
     "version": "5.0.0-rc.10",
     "devOnly": true
   },
+  "@callstack/repack-plugin-reanimated": {
+    "name": "@callstack/repack-plugin-reanimated",
+    "version": "5.0.0-rc.10",
+    "devOnly": true
+  },
   "@react-native/babel-preset": {
     "name": "@react-native/babel-preset",
     "version": "0.76.6",
@@ -106,7 +111,7 @@
   },
   "zephyr-repack-plugin": {
     "name": "zephyr-repack-plugin",
-    "version": "0.0.0-canary-20250130213446",
+    "version": "0.0.34",
     "devOnly": true
   },
   "@rsdoctor/rspack-plugin": {
