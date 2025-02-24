@@ -1,5 +1,5 @@
 import React from 'react';
-import {FlatList, StyleSheet, View} from 'react-native';
+import {FlatList, StyleSheet, Text, View} from 'react-native';
 
 import {
   ActivityIndicator,
@@ -25,7 +25,8 @@ const HomeScreen = ({onProductPress}: Props) => {
     <ModuleBoundary withTopRadius color={colors.moduleBoundaries.inventory}>
       <View style={styles.container}>
         <Navbar testID="homeScreen.navbar" />
-        <FlatList
+        <Text style={styles.hi}>This is a new version!!!</Text>
+        {/* <FlatList
           testID="homeScreen.productsList"
           style={styles.listContainer}
           contentContainerStyle={styles.contentContainer}
@@ -50,7 +51,7 @@ const HomeScreen = ({onProductPress}: Props) => {
               onPress={() => onProductPress(item.id)}
             />
           )}
-        />
+        /> */}
       </View>
     </ModuleBoundary>
   );
@@ -61,6 +62,12 @@ const useStyles = () => {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
+    },
+    hi: {
+      fontSize: rem(28),
+      padding: rem(20),
+      color: 'white',
+      backgroundColor: 'black',
     },
     listContainer: {
       paddingTop: 16,

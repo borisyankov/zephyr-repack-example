@@ -1,0 +1,797 @@
+{
+  "mode": "development",
+  "context": "/Users/boris.yankov/code/zephyr-repack-example/apps/mobile-host",
+  "entry": "./index.js",
+  "experiments": {
+    "incremental": true
+  },
+  "resolve": {
+    "mainFields": [
+      "react-native",
+      "browser",
+      "main"
+    ],
+    "aliasFields": [
+      "react-native",
+      "browser",
+      "main"
+    ],
+    "conditionNames": [],
+    "exportsFields": [],
+    "extensions": [
+      ".[platform].js",
+      ".native.js",
+      ".js",
+      ".[platform].jsx",
+      ".native.jsx",
+      ".jsx",
+      ".[platform].ts",
+      ".native.ts",
+      ".ts",
+      ".[platform].tsx",
+      ".native.tsx",
+      ".tsx",
+      ".[platform].json",
+      ".native.json",
+      ".json"
+    ],
+    "extensionAlias": {
+      ".bmp": [
+        "@0.75x.bmp",
+        "@1x.bmp",
+        "@1.5x.bmp",
+        "@2x.bmp",
+        "@3x.bmp",
+        "@4x.bmp",
+        ".bmp"
+      ],
+      ".gif": [
+        "@0.75x.gif",
+        "@1x.gif",
+        "@1.5x.gif",
+        "@2x.gif",
+        "@3x.gif",
+        "@4x.gif",
+        ".gif"
+      ],
+      ".jpg": [
+        "@0.75x.jpg",
+        "@1x.jpg",
+        "@1.5x.jpg",
+        "@2x.jpg",
+        "@3x.jpg",
+        "@4x.jpg",
+        ".jpg"
+      ],
+      ".jpeg": [
+        "@0.75x.jpeg",
+        "@1x.jpeg",
+        "@1.5x.jpeg",
+        "@2x.jpeg",
+        "@3x.jpeg",
+        "@4x.jpeg",
+        ".jpeg"
+      ],
+      ".png": [
+        "@0.75x.png",
+        "@1x.png",
+        "@1.5x.png",
+        "@2x.png",
+        "@3x.png",
+        "@4x.png",
+        ".png"
+      ],
+      ".psd": [
+        "@0.75x.psd",
+        "@1x.psd",
+        "@1.5x.psd",
+        "@2x.psd",
+        "@3x.psd",
+        "@4x.psd",
+        ".psd"
+      ],
+      ".svg": [
+        "@0.75x.svg",
+        "@1x.svg",
+        "@1.5x.svg",
+        "@2x.svg",
+        "@3x.svg",
+        "@4x.svg",
+        ".svg"
+      ],
+      ".webp": [
+        "@0.75x.webp",
+        "@1x.webp",
+        "@1.5x.webp",
+        "@2x.webp",
+        "@3x.webp",
+        "@4x.webp",
+        ".webp"
+      ],
+      ".tiff": [
+        "@0.75x.tiff",
+        "@1x.tiff",
+        "@1.5x.tiff",
+        "@2x.tiff",
+        "@3x.tiff",
+        "@4x.tiff",
+        ".tiff"
+      ]
+    },
+    "importsFields": []
+  },
+  "output": {
+    "uniqueName": "mobile-host"
+  },
+  "module": {
+    "rules": [
+      {
+        "type": "javascript/auto",
+        "test": {},
+        "oneOf": [
+          {
+            "test": {},
+            "use": {
+              "loader": "builtin:swc-loader",
+              "options": {
+                "env": {
+                  "targets": {
+                    "node": 24
+                  },
+                  "include": [
+                    "transform-block-scoping",
+                    "transform-class-properties",
+                    "transform-private-methods",
+                    "transform-private-property-in-object",
+                    "transform-classes",
+                    "transform-destructuring",
+                    "transform-async-to-generator",
+                    "transform-async-generator-functions",
+                    "transform-unicode-regex",
+                    "transform-named-capturing-groups-regex",
+                    "transform-optional-chaining",
+                    "transform-spread",
+                    "transform-object-rest-spread",
+                    "transform-class-static-block"
+                  ]
+                },
+                "jsc": {
+                  "assumptions": {
+                    "setPublicClassFields": true,
+                    "privateFieldsAsProperties": true
+                  },
+                  "externalHelpers": true,
+                  "parser": {
+                    "syntax": "ecmascript",
+                    "jsx": true,
+                    "exportDefaultFrom": true
+                  },
+                  "transform": {
+                    "react": {
+                      "runtime": "automatic",
+                      "development": false,
+                      "importSource": "react"
+                    }
+                  }
+                },
+                "module": {
+                  "type": "commonjs",
+                  "strict": false,
+                  "strictMode": false,
+                  "noInterop": false,
+                  "lazy": false,
+                  "allowTopLevelThis": true,
+                  "ignoreDynamic": true
+                }
+              }
+            }
+          },
+          {
+            "test": {},
+            "use": {
+              "loader": "builtin:swc-loader",
+              "options": {
+                "env": {
+                  "targets": {
+                    "node": 24
+                  },
+                  "include": [
+                    "transform-block-scoping",
+                    "transform-class-properties",
+                    "transform-private-methods",
+                    "transform-private-property-in-object",
+                    "transform-classes",
+                    "transform-destructuring",
+                    "transform-async-to-generator",
+                    "transform-async-generator-functions",
+                    "transform-unicode-regex",
+                    "transform-named-capturing-groups-regex",
+                    "transform-optional-chaining",
+                    "transform-spread",
+                    "transform-object-rest-spread",
+                    "transform-class-static-block"
+                  ]
+                },
+                "jsc": {
+                  "assumptions": {
+                    "setPublicClassFields": true,
+                    "privateFieldsAsProperties": true
+                  },
+                  "externalHelpers": true,
+                  "parser": {
+                    "syntax": "typescript",
+                    "tsx": true
+                  },
+                  "transform": {
+                    "react": {
+                      "runtime": "automatic",
+                      "development": false,
+                      "importSource": "react"
+                    }
+                  }
+                },
+                "module": {
+                  "type": "commonjs",
+                  "strict": false,
+                  "strictMode": false,
+                  "noInterop": false,
+                  "lazy": false,
+                  "allowTopLevelThis": true,
+                  "ignoreDynamic": true
+                }
+              }
+            }
+          },
+          {
+            "test": {},
+            "use": {
+              "loader": "builtin:swc-loader",
+              "options": {
+                "env": {
+                  "targets": {
+                    "node": 24
+                  },
+                  "include": [
+                    "transform-block-scoping",
+                    "transform-class-properties",
+                    "transform-private-methods",
+                    "transform-private-property-in-object",
+                    "transform-classes",
+                    "transform-destructuring",
+                    "transform-async-to-generator",
+                    "transform-async-generator-functions",
+                    "transform-unicode-regex",
+                    "transform-named-capturing-groups-regex",
+                    "transform-optional-chaining",
+                    "transform-spread",
+                    "transform-object-rest-spread",
+                    "transform-class-static-block"
+                  ]
+                },
+                "jsc": {
+                  "assumptions": {
+                    "setPublicClassFields": true,
+                    "privateFieldsAsProperties": true
+                  },
+                  "externalHelpers": true,
+                  "parser": {
+                    "syntax": "typescript",
+                    "tsx": true
+                  },
+                  "transform": {
+                    "react": {
+                      "runtime": "automatic",
+                      "development": false,
+                      "importSource": "react"
+                    }
+                  }
+                },
+                "module": {
+                  "type": "commonjs",
+                  "strict": false,
+                  "strictMode": false,
+                  "noInterop": false,
+                  "lazy": false,
+                  "allowTopLevelThis": true,
+                  "ignoreDynamic": true
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "javascript/auto",
+        "test": {},
+        "include": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {}
+        ],
+        "exclude": [],
+        "use": {
+          "loader": "@callstack/repack/flow-loader",
+          "options": {
+            "all": true,
+            "ignoreUninitializedFields": false
+          }
+        }
+      },
+      {
+        "type": "javascript/auto",
+        "test": {},
+        "use": {
+          "loader": "babel-loader",
+          "options": {
+            "babelrc": false,
+            "configFile": false,
+            "parserOpts": {
+              "flow": "all"
+            },
+            "plugins": [
+              "babel-plugin-syntax-hermes-parser",
+              [
+                "@babel/plugin-syntax-typescript",
+                false
+              ],
+              "@react-native/babel-plugin-codegen"
+            ],
+            "overrides": [
+              {
+                "test": {},
+                "plugins": [
+                  [
+                    "@babel/plugin-syntax-typescript",
+                    {
+                      "isTSX": false,
+                      "allowNamespaces": true
+                    }
+                  ]
+                ]
+              },
+              {
+                "test": {},
+                "plugins": [
+                  [
+                    "@babel/plugin-syntax-typescript",
+                    {
+                      "isTSX": true,
+                      "allowNamespaces": true
+                    }
+                  ]
+                ]
+              }
+            ],
+            "sourceMaps": true
+          }
+        }
+      },
+      {
+        "test": {},
+        "use": {
+          "loader": "@callstack/repack/assets-loader",
+          "options": {}
+        }
+      }
+    ]
+  },
+  "plugins": [
+    {
+      "config": {
+        "logger": {}
+      }
+    },
+    {
+      "config": {
+        "name": "MobileHost",
+        "dts": false,
+        "remotes": {
+          "MobileCart": "promise new Promise((resolve, reject) => {\n        const remote_entry_url = 'MobileCart@https://boris-yankov-jfrpliow5v-260-mobilecart-zephyr-rep-d6d13a589-ze.zephyrcloud.app/MobileCart.container.js.bundle';\n        const library_type = 'var';\n        let edgeUrl = remote_entry_url;\n        let remote_name = 'MobileCart';\n        if (edgeUrl.includes('@')) {\n            [remote_name, edgeUrl] = edgeUrl.split('@');\n        }\n        const resolve_entry = [\n            fetch(edgeUrl, {\n                method: 'HEAD',\n                headers: {\n                    'Cache-Control': 'no-cache, no-store, must-revalidate',\n                },\n            })\n                .then(() => edgeUrl)\n                .catch(() => false),\n        ];\n        Promise.race(resolve_entry)\n            .then((remoteUrl) => {\n            if (typeof remoteUrl !== 'string')\n                return;\n            let _win = {};\n            _win =\n                globalThis !== undefined\n                    ? globalThis\n                    : global;\n            const ScriptManager = __webpack_require__.repack.shared.scriptManager;\n            ScriptManager.addResolver(\n            // @ts-expect-error TODO fix await\n            (scriptId, caller, referenceUrl) => {\n                if (scriptId === remote_name) {\n                    return { url: remoteUrl };\n                }\n                if (referenceUrl && caller === remote_name) {\n                    const publicPath = remoteUrl.split('/').slice(0, -1).join('/');\n                    const bundlePath = scriptId + referenceUrl.split(scriptId)[1];\n                    return { url: publicPath + '/' + bundlePath };\n                }\n                return;\n            }, { key: remote_name });\n            if (typeof _win[remote_name] !== 'undefined') {\n                return resolve(_win[remote_name]);\n            }\n            if (typeof __webpack_require__ !== 'undefined' &&\n                typeof __webpack_require__.l === 'function' &&\n                // @ts-expect-error - library_type is inherited enum type instead of string\n                library_type !== 'self') {\n                // @ts-expect-error temp\n                __webpack_require__.l(remote_entry_url, () => {\n                    resolve(_win[remote_name]);\n                }, remote_name\n                // remote_name\n                );\n                return;\n            }\n            return new Function(`return import(\"${remoteUrl}\")`)()\n                .then((mod) => {\n                if (typeof _win[remote_name] !== 'undefined') {\n                    return resolve(_win[remote_name]);\n                }\n                return resolve(mod);\n            })\n                .catch((err) => {\n                reject(err);\n            });\n        })\n            .catch((err) => {\n            console.error(`Zephyr: error loading remote entry ${remote_entry_url}`, err);\n        });\n    })",
+          "MobileInventory": "promise new Promise((resolve, reject) => {\n        const remote_entry_url = 'MobileInventory@https://boris-yankov-jfrpliow5v-269-mobileinventory-zephy-1aa7ec694-ze.zephyrcloud.app/MobileInventory.container.js.bundle';\n        const library_type = 'var';\n        let edgeUrl = remote_entry_url;\n        let remote_name = 'MobileInventory';\n        if (edgeUrl.includes('@')) {\n            [remote_name, edgeUrl] = edgeUrl.split('@');\n        }\n        const resolve_entry = [\n            fetch(edgeUrl, {\n                method: 'HEAD',\n                headers: {\n                    'Cache-Control': 'no-cache, no-store, must-revalidate',\n                },\n            })\n                .then(() => edgeUrl)\n                .catch(() => false),\n        ];\n        Promise.race(resolve_entry)\n            .then((remoteUrl) => {\n            if (typeof remoteUrl !== 'string')\n                return;\n            let _win = {};\n            _win =\n                globalThis !== undefined\n                    ? globalThis\n                    : global;\n            const ScriptManager = __webpack_require__.repack.shared.scriptManager;\n            ScriptManager.addResolver(\n            // @ts-expect-error TODO fix await\n            (scriptId, caller, referenceUrl) => {\n                if (scriptId === remote_name) {\n                    return { url: remoteUrl };\n                }\n                if (referenceUrl && caller === remote_name) {\n                    const publicPath = remoteUrl.split('/').slice(0, -1).join('/');\n                    const bundlePath = scriptId + referenceUrl.split(scriptId)[1];\n                    return { url: publicPath + '/' + bundlePath };\n                }\n                return;\n            }, { key: remote_name });\n            if (typeof _win[remote_name] !== 'undefined') {\n                return resolve(_win[remote_name]);\n            }\n            if (typeof __webpack_require__ !== 'undefined' &&\n                typeof __webpack_require__.l === 'function' &&\n                // @ts-expect-error - library_type is inherited enum type instead of string\n                library_type !== 'self') {\n                // @ts-expect-error temp\n                __webpack_require__.l(remote_entry_url, () => {\n                    resolve(_win[remote_name]);\n                }, remote_name\n                // remote_name\n                );\n                return;\n            }\n            return new Function(`return import(\"${remoteUrl}\")`)()\n                .then((mod) => {\n                if (typeof _win[remote_name] !== 'undefined') {\n                    return resolve(_win[remote_name]);\n                }\n                return resolve(mod);\n            })\n                .catch((err) => {\n                reject(err);\n            });\n        })\n            .catch((err) => {\n            console.error(`Zephyr: error loading remote entry ${remote_entry_url}`, err);\n        });\n    })",
+          "MobileCheckout": "promise new Promise((resolve, reject) => {\n        const remote_entry_url = 'MobileCheckout@https://boris-yankov-jfrpliow5v-264-mobilecheckout-zephyr-4c854cb33-ze.zephyrcloud.app/MobileCheckout.container.js.bundle';\n        const library_type = 'var';\n        let edgeUrl = remote_entry_url;\n        let remote_name = 'MobileCheckout';\n        if (edgeUrl.includes('@')) {\n            [remote_name, edgeUrl] = edgeUrl.split('@');\n        }\n        const resolve_entry = [\n            fetch(edgeUrl, {\n                method: 'HEAD',\n                headers: {\n                    'Cache-Control': 'no-cache, no-store, must-revalidate',\n                },\n            })\n                .then(() => edgeUrl)\n                .catch(() => false),\n        ];\n        Promise.race(resolve_entry)\n            .then((remoteUrl) => {\n            if (typeof remoteUrl !== 'string')\n                return;\n            let _win = {};\n            _win =\n                globalThis !== undefined\n                    ? globalThis\n                    : global;\n            const ScriptManager = __webpack_require__.repack.shared.scriptManager;\n            ScriptManager.addResolver(\n            // @ts-expect-error TODO fix await\n            (scriptId, caller, referenceUrl) => {\n                if (scriptId === remote_name) {\n                    return { url: remoteUrl };\n                }\n                if (referenceUrl && caller === remote_name) {\n                    const publicPath = remoteUrl.split('/').slice(0, -1).join('/');\n                    const bundlePath = scriptId + referenceUrl.split(scriptId)[1];\n                    return { url: publicPath + '/' + bundlePath };\n                }\n                return;\n            }, { key: remote_name });\n            if (typeof _win[remote_name] !== 'undefined') {\n                return resolve(_win[remote_name]);\n            }\n            if (typeof __webpack_require__ !== 'undefined' &&\n                typeof __webpack_require__.l === 'function' &&\n                // @ts-expect-error - library_type is inherited enum type instead of string\n                library_type !== 'self') {\n                // @ts-expect-error temp\n                __webpack_require__.l(remote_entry_url, () => {\n                    resolve(_win[remote_name]);\n                }, remote_name\n                // remote_name\n                );\n                return;\n            }\n            return new Function(`return import(\"${remoteUrl}\")`)()\n                .then((mod) => {\n                if (typeof _win[remote_name] !== 'undefined') {\n                    return resolve(_win[remote_name]);\n                }\n                return resolve(mod);\n            })\n                .catch((err) => {\n                reject(err);\n            });\n        })\n            .catch((err) => {\n            console.error(`Zephyr: error loading remote entry ${remote_entry_url}`, err);\n        });\n    })",
+          "MobileOrders": "promise new Promise((resolve, reject) => {\n        const remote_entry_url = 'MobileOrders@https://boris-yankov-jfrpliow5v-259-mobileorders-zephyr-r-8f2a3034c-ze.zephyrcloud.app/MobileOrders.container.js.bundle';\n        const library_type = 'var';\n        let edgeUrl = remote_entry_url;\n        let remote_name = 'MobileOrders';\n        if (edgeUrl.includes('@')) {\n            [remote_name, edgeUrl] = edgeUrl.split('@');\n        }\n        const resolve_entry = [\n            fetch(edgeUrl, {\n                method: 'HEAD',\n                headers: {\n                    'Cache-Control': 'no-cache, no-store, must-revalidate',\n                },\n            })\n                .then(() => edgeUrl)\n                .catch(() => false),\n        ];\n        Promise.race(resolve_entry)\n            .then((remoteUrl) => {\n            if (typeof remoteUrl !== 'string')\n                return;\n            let _win = {};\n            _win =\n                globalThis !== undefined\n                    ? globalThis\n                    : global;\n            const ScriptManager = __webpack_require__.repack.shared.scriptManager;\n            ScriptManager.addResolver(\n            // @ts-expect-error TODO fix await\n            (scriptId, caller, referenceUrl) => {\n                if (scriptId === remote_name) {\n                    return { url: remoteUrl };\n                }\n                if (referenceUrl && caller === remote_name) {\n                    const publicPath = remoteUrl.split('/').slice(0, -1).join('/');\n                    const bundlePath = scriptId + referenceUrl.split(scriptId)[1];\n                    return { url: publicPath + '/' + bundlePath };\n                }\n                return;\n            }, { key: remote_name });\n            if (typeof _win[remote_name] !== 'undefined') {\n                return resolve(_win[remote_name]);\n            }\n            if (typeof __webpack_require__ !== 'undefined' &&\n                typeof __webpack_require__.l === 'function' &&\n                // @ts-expect-error - library_type is inherited enum type instead of string\n                library_type !== 'self') {\n                // @ts-expect-error temp\n                __webpack_require__.l(remote_entry_url, () => {\n                    resolve(_win[remote_name]);\n                }, remote_name\n                // remote_name\n                );\n                return;\n            }\n            return new Function(`return import(\"${remoteUrl}\")`)()\n                .then((mod) => {\n                if (typeof _win[remote_name] !== 'undefined') {\n                    return resolve(_win[remote_name]);\n                }\n                return resolve(mod);\n            })\n                .catch((err) => {\n                reject(err);\n            });\n        })\n            .catch((err) => {\n            console.error(`Zephyr: error loading remote entry ${remote_entry_url}`, err);\n        });\n    })"
+        },
+        "shared": {
+          "react": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "18.3.1"
+          },
+          "react-native": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "0.76.6"
+          },
+          "@react-navigation/native": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "6.1.18"
+          },
+          "@react-navigation/native-stack": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "6.11.0"
+          },
+          "react-native-paper": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "5.12.5"
+          },
+          "react-native-safe-area-context": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "4.12.0"
+          },
+          "react-native-screens": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "3.35.0"
+          },
+          "react-native-vector-icons": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "10.2.0"
+          },
+          "@module-federation/enhanced": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "0.6.13"
+          },
+          "react-native-mmkv": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "3.1.0"
+          },
+          "react-native-localize": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "3.3.0"
+          },
+          "mobile-core": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "0.0.1"
+          },
+          "lottie-react-native": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "7.2.2"
+          },
+          "react-native-config": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "1.5.3"
+          },
+          "react-native-screen-corner-radius": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "0.2.2"
+          }
+        },
+        "runtimePlugins": [
+          "/Users/boris.yankov/code/zephyr-repack-example/apps/mobile-host/src/custom-runtime-plugin.ts"
+        ]
+      },
+      "deepImports": true,
+      "defaultRuntimePlugins": [
+        "@callstack/repack/mf/core-plugin",
+        "@callstack/repack/mf/resolver-plugin"
+      ]
+    },
+    {
+      "name": "IgnorePlugin",
+      "_args": [
+        {
+          "resourceRegExp": {}
+        }
+      ]
+    },
+    {
+      "_options": {
+        "pluginName": "ZephyrRepackPlugin",
+        "zephyr_engine": {
+          "env": {
+            "isCI": {
+              "default": false
+            },
+            "buildEnv": "ci",
+            "target": "web"
+          },
+          "buildProperties": {
+            "output": "./dist"
+          },
+          "federated_dependencies": [
+            {
+              "name": "MobileCart",
+              "application_uid": "mobilecart.zephyr-repack-example.borisyankov",
+              "default_url": "https://zephyrcloud.app/MobileCart.container.js.bundle",
+              "remote_entry_url": "MobileCart@https://boris-yankov-jfrpliow5v-260-mobilecart-zephyr-rep-d6d13a589-ze.zephyrcloud.app/MobileCart.container.js.bundle",
+              "version": "MobileCart@http://localhost:9000/ios/MobileCart.container.js.bundle",
+              "library_type": "var"
+            },
+            {
+              "name": "MobileInventory",
+              "application_uid": "mobileinventory.zephyr-repack-example.borisyankov",
+              "default_url": "https://zephyrcloud.app/MobileInventory.container.js.bundle",
+              "remote_entry_url": "MobileInventory@https://boris-yankov-jfrpliow5v-269-mobileinventory-zephy-1aa7ec694-ze.zephyrcloud.app/MobileInventory.container.js.bundle",
+              "version": "MobileInventory@http://localhost:9001/ios/MobileInventory.container.js.bundle",
+              "library_type": "var"
+            },
+            {
+              "name": "MobileCheckout",
+              "application_uid": "mobilecheckout.zephyr-repack-example.borisyankov",
+              "default_url": "https://zephyrcloud.app/MobileCheckout.container.js.bundle",
+              "remote_entry_url": "MobileCheckout@https://boris-yankov-jfrpliow5v-264-mobilecheckout-zephyr-4c854cb33-ze.zephyrcloud.app/MobileCheckout.container.js.bundle",
+              "version": "MobileCheckout@http://localhost:9002/ios/MobileCheckout.container.js.bundle",
+              "library_type": "var"
+            },
+            {
+              "name": "MobileOrders",
+              "application_uid": "mobileorders.zephyr-repack-example.borisyankov",
+              "default_url": "https://zephyrcloud.app/MobileOrders.container.js.bundle",
+              "remote_entry_url": "MobileOrders@https://boris-yankov-jfrpliow5v-259-mobileorders-zephyr-r-8f2a3034c-ze.zephyrcloud.app/MobileOrders.container.js.bundle",
+              "version": "MobileOrders@http://localhost:9003/ios/MobileOrders.container.js.bundle",
+              "library_type": "var"
+            }
+          ],
+          "build_start_time": 1740527074090,
+          "build_id": {},
+          "snapshotId": {},
+          "hash_list": {},
+          "version_url": null,
+          "upload_file": true,
+          "builder": "repack",
+          "npmProperties": {
+            "name": "MobileHost",
+            "version": "0.0.1",
+            "private": true,
+            "scripts": {
+              "android": "react-native run-android --no-packager",
+              "ios": "react-native run-ios --no-packager",
+              "start": "react-native start",
+              "test": "nx jest:test --passWithNoTests",
+              "lint": "nx eslint:lint --ext .js,.jsx,.ts,.tsx",
+              "typecheck": "tsc",
+              "bundle:ios": "react-native bundle --platform ios --entry-file index.js --dev false",
+              "bundle:android": "react-native bundle --platform android --entry-file index.js --dev false",
+              "pods": "(cd ios && bundle install && bundle exec pod install)",
+              "pods:update": "(cd ios && bundle exec pod update)",
+              "align-deps": "rnx-align-deps --write",
+              "check-deps": "rnx-align-deps",
+              "adbreverse": "adb reverse tcp:8081 tcp:8081"
+            },
+            "dependencies": {
+              "@module-federation/enhanced": "0.6.13",
+              "@react-native-community/netinfo": "11.4.1",
+              "@react-navigation/native": "6.1.18",
+              "@react-navigation/native-stack": "6.11.0",
+              "lottie-react-native": "7.2.2",
+              "mobile-core": "0.0.1",
+              "react": "18.3.1",
+              "react-native": "0.76.6",
+              "react-native-bootsplash": "^6.3.1",
+              "react-native-config": "1.5.3",
+              "react-native-localize": "3.3.0",
+              "react-native-mmkv": "3.1.0",
+              "react-native-paper": "5.12.5",
+              "react-native-safe-area-context": "4.12.0",
+              "react-native-screen-corner-radius": "0.2.2",
+              "react-native-screens": "3.35.0",
+              "react-native-vector-icons": "10.2.0"
+            },
+            "dependenciesMeta": {
+              "mobile-core": {
+                "injected": true
+              }
+            },
+            "devDependencies": {
+              "@babel/core": "^7.25.2",
+              "@babel/plugin-syntax-typescript": "7.25.9",
+              "@babel/plugin-transform-react-jsx": "^7.25.9",
+              "@babel/preset-env": "^7.25.3",
+              "@babel/runtime": "^7.25.0",
+              "@callstack/eslint-config": "^15.0.0",
+              "@callstack/repack": "5.0.0-rc.10",
+              "@react-native-community/cli": "^15.1.2",
+              "@react-native/babel-plugin-codegen": "0.76.5",
+              "@react-native/babel-preset": "0.76.6",
+              "@react-native/eslint-config": "0.76.6",
+              "@react-native/typescript-config": "0.76.6",
+              "@rnx-kit/align-deps": "^2.5.5",
+              "@rsdoctor/rspack-plugin": "^0.4.13",
+              "@rspack/core": "^1.2.2",
+              "@swc/helpers": "0.5.15",
+              "@types/jest": "^29.5.14",
+              "@types/react": "^18.2.6",
+              "@types/react-native-vector-icons": "^6.4.12",
+              "@types/react-test-renderer": "^18.3.0",
+              "babel-jest": "^29.6.3",
+              "babel-loader": "^9.2.1",
+              "babel-plugin-syntax-hermes-parser": "0.25.1",
+              "eslint": "^8.57.0",
+              "eslint-plugin-barrel-files": "^2.1.0",
+              "eslint-plugin-simple-import-sort": "^12.1.1",
+              "jest": "^29.6.3",
+              "mobile-eslint-config": "workspace:^",
+              "mobile-sdk": "0.0.1",
+              "react-test-renderer": "^18.3.1",
+              "reactotron-react-native": "^5.1.12",
+              "typescript": "^5.6.3",
+              "webpack": "^5.95.0",
+              "zephyr-repack-plugin": "0.0.34"
+            },
+            "rnx-kit": {
+              "kitType": "app",
+              "alignDeps": {
+                "presets": [
+                  "./node_modules/mobile-sdk/preset"
+                ],
+                "requirements": [
+                  "mobile-sdk@0.0.1"
+                ],
+                "capabilities": [
+                  "super-app"
+                ]
+              }
+            }
+          },
+          "gitProperties": {
+            "git": {
+              "name": "Boris Yankov",
+              "email": "borisyankov@gmail.com",
+              "branch": "ota",
+              "commit": "47285aa2254487769a8f8a96430cc6bb73519f80"
+            },
+            "app": {
+              "org": "borisyankov",
+              "project": "zephyr-repack-example"
+            }
+          },
+          "applicationProperties": {
+            "org": "borisyankov",
+            "project": "zephyr-repack-example",
+            "name": "MobileHost",
+            "version": "0.0.1"
+          },
+          "application_uid": "mobilehost.zephyr-repack-example.borisyankov",
+          "application_configuration": {},
+          "logger": {}
+        },
+        "mfConfig": [
+          {
+            "config": {
+              "name": "MobileHost",
+              "dts": false,
+              "remotes": {
+                "MobileCart": "promise new Promise((resolve, reject) => {\n        const remote_entry_url = 'MobileCart@https://boris-yankov-jfrpliow5v-260-mobilecart-zephyr-rep-d6d13a589-ze.zephyrcloud.app/MobileCart.container.js.bundle';\n        const library_type = 'var';\n        let edgeUrl = remote_entry_url;\n        let remote_name = 'MobileCart';\n        if (edgeUrl.includes('@')) {\n            [remote_name, edgeUrl] = edgeUrl.split('@');\n        }\n        const resolve_entry = [\n            fetch(edgeUrl, {\n                method: 'HEAD',\n                headers: {\n                    'Cache-Control': 'no-cache, no-store, must-revalidate',\n                },\n            })\n                .then(() => edgeUrl)\n                .catch(() => false),\n        ];\n        Promise.race(resolve_entry)\n            .then((remoteUrl) => {\n            if (typeof remoteUrl !== 'string')\n                return;\n            let _win = {};\n            _win =\n                globalThis !== undefined\n                    ? globalThis\n                    : global;\n            const ScriptManager = __webpack_require__.repack.shared.scriptManager;\n            ScriptManager.addResolver(\n            // @ts-expect-error TODO fix await\n            (scriptId, caller, referenceUrl) => {\n                if (scriptId === remote_name) {\n                    return { url: remoteUrl };\n                }\n                if (referenceUrl && caller === remote_name) {\n                    const publicPath = remoteUrl.split('/').slice(0, -1).join('/');\n                    const bundlePath = scriptId + referenceUrl.split(scriptId)[1];\n                    return { url: publicPath + '/' + bundlePath };\n                }\n                return;\n            }, { key: remote_name });\n            if (typeof _win[remote_name] !== 'undefined') {\n                return resolve(_win[remote_name]);\n            }\n            if (typeof __webpack_require__ !== 'undefined' &&\n                typeof __webpack_require__.l === 'function' &&\n                // @ts-expect-error - library_type is inherited enum type instead of string\n                library_type !== 'self') {\n                // @ts-expect-error temp\n                __webpack_require__.l(remote_entry_url, () => {\n                    resolve(_win[remote_name]);\n                }, remote_name\n                // remote_name\n                );\n                return;\n            }\n            return new Function(`return import(\"${remoteUrl}\")`)()\n                .then((mod) => {\n                if (typeof _win[remote_name] !== 'undefined') {\n                    return resolve(_win[remote_name]);\n                }\n                return resolve(mod);\n            })\n                .catch((err) => {\n                reject(err);\n            });\n        })\n            .catch((err) => {\n            console.error(`Zephyr: error loading remote entry ${remote_entry_url}`, err);\n        });\n    })",
+                "MobileInventory": "promise new Promise((resolve, reject) => {\n        const remote_entry_url = 'MobileInventory@https://boris-yankov-jfrpliow5v-269-mobileinventory-zephy-1aa7ec694-ze.zephyrcloud.app/MobileInventory.container.js.bundle';\n        const library_type = 'var';\n        let edgeUrl = remote_entry_url;\n        let remote_name = 'MobileInventory';\n        if (edgeUrl.includes('@')) {\n            [remote_name, edgeUrl] = edgeUrl.split('@');\n        }\n        const resolve_entry = [\n            fetch(edgeUrl, {\n                method: 'HEAD',\n                headers: {\n                    'Cache-Control': 'no-cache, no-store, must-revalidate',\n                },\n            })\n                .then(() => edgeUrl)\n                .catch(() => false),\n        ];\n        Promise.race(resolve_entry)\n            .then((remoteUrl) => {\n            if (typeof remoteUrl !== 'string')\n                return;\n            let _win = {};\n            _win =\n                globalThis !== undefined\n                    ? globalThis\n                    : global;\n            const ScriptManager = __webpack_require__.repack.shared.scriptManager;\n            ScriptManager.addResolver(\n            // @ts-expect-error TODO fix await\n            (scriptId, caller, referenceUrl) => {\n                if (scriptId === remote_name) {\n                    return { url: remoteUrl };\n                }\n                if (referenceUrl && caller === remote_name) {\n                    const publicPath = remoteUrl.split('/').slice(0, -1).join('/');\n                    const bundlePath = scriptId + referenceUrl.split(scriptId)[1];\n                    return { url: publicPath + '/' + bundlePath };\n                }\n                return;\n            }, { key: remote_name });\n            if (typeof _win[remote_name] !== 'undefined') {\n                return resolve(_win[remote_name]);\n            }\n            if (typeof __webpack_require__ !== 'undefined' &&\n                typeof __webpack_require__.l === 'function' &&\n                // @ts-expect-error - library_type is inherited enum type instead of string\n                library_type !== 'self') {\n                // @ts-expect-error temp\n                __webpack_require__.l(remote_entry_url, () => {\n                    resolve(_win[remote_name]);\n                }, remote_name\n                // remote_name\n                );\n                return;\n            }\n            return new Function(`return import(\"${remoteUrl}\")`)()\n                .then((mod) => {\n                if (typeof _win[remote_name] !== 'undefined') {\n                    return resolve(_win[remote_name]);\n                }\n                return resolve(mod);\n            })\n                .catch((err) => {\n                reject(err);\n            });\n        })\n            .catch((err) => {\n            console.error(`Zephyr: error loading remote entry ${remote_entry_url}`, err);\n        });\n    })",
+                "MobileCheckout": "promise new Promise((resolve, reject) => {\n        const remote_entry_url = 'MobileCheckout@https://boris-yankov-jfrpliow5v-264-mobilecheckout-zephyr-4c854cb33-ze.zephyrcloud.app/MobileCheckout.container.js.bundle';\n        const library_type = 'var';\n        let edgeUrl = remote_entry_url;\n        let remote_name = 'MobileCheckout';\n        if (edgeUrl.includes('@')) {\n            [remote_name, edgeUrl] = edgeUrl.split('@');\n        }\n        const resolve_entry = [\n            fetch(edgeUrl, {\n                method: 'HEAD',\n                headers: {\n                    'Cache-Control': 'no-cache, no-store, must-revalidate',\n                },\n            })\n                .then(() => edgeUrl)\n                .catch(() => false),\n        ];\n        Promise.race(resolve_entry)\n            .then((remoteUrl) => {\n            if (typeof remoteUrl !== 'string')\n                return;\n            let _win = {};\n            _win =\n                globalThis !== undefined\n                    ? globalThis\n                    : global;\n            const ScriptManager = __webpack_require__.repack.shared.scriptManager;\n            ScriptManager.addResolver(\n            // @ts-expect-error TODO fix await\n            (scriptId, caller, referenceUrl) => {\n                if (scriptId === remote_name) {\n                    return { url: remoteUrl };\n                }\n                if (referenceUrl && caller === remote_name) {\n                    const publicPath = remoteUrl.split('/').slice(0, -1).join('/');\n                    const bundlePath = scriptId + referenceUrl.split(scriptId)[1];\n                    return { url: publicPath + '/' + bundlePath };\n                }\n                return;\n            }, { key: remote_name });\n            if (typeof _win[remote_name] !== 'undefined') {\n                return resolve(_win[remote_name]);\n            }\n            if (typeof __webpack_require__ !== 'undefined' &&\n                typeof __webpack_require__.l === 'function' &&\n                // @ts-expect-error - library_type is inherited enum type instead of string\n                library_type !== 'self') {\n                // @ts-expect-error temp\n                __webpack_require__.l(remote_entry_url, () => {\n                    resolve(_win[remote_name]);\n                }, remote_name\n                // remote_name\n                );\n                return;\n            }\n            return new Function(`return import(\"${remoteUrl}\")`)()\n                .then((mod) => {\n                if (typeof _win[remote_name] !== 'undefined') {\n                    return resolve(_win[remote_name]);\n                }\n                return resolve(mod);\n            })\n                .catch((err) => {\n                reject(err);\n            });\n        })\n            .catch((err) => {\n            console.error(`Zephyr: error loading remote entry ${remote_entry_url}`, err);\n        });\n    })",
+                "MobileOrders": "promise new Promise((resolve, reject) => {\n        const remote_entry_url = 'MobileOrders@https://boris-yankov-jfrpliow5v-259-mobileorders-zephyr-r-8f2a3034c-ze.zephyrcloud.app/MobileOrders.container.js.bundle';\n        const library_type = 'var';\n        let edgeUrl = remote_entry_url;\n        let remote_name = 'MobileOrders';\n        if (edgeUrl.includes('@')) {\n            [remote_name, edgeUrl] = edgeUrl.split('@');\n        }\n        const resolve_entry = [\n            fetch(edgeUrl, {\n                method: 'HEAD',\n                headers: {\n                    'Cache-Control': 'no-cache, no-store, must-revalidate',\n                },\n            })\n                .then(() => edgeUrl)\n                .catch(() => false),\n        ];\n        Promise.race(resolve_entry)\n            .then((remoteUrl) => {\n            if (typeof remoteUrl !== 'string')\n                return;\n            let _win = {};\n            _win =\n                globalThis !== undefined\n                    ? globalThis\n                    : global;\n            const ScriptManager = __webpack_require__.repack.shared.scriptManager;\n            ScriptManager.addResolver(\n            // @ts-expect-error TODO fix await\n            (scriptId, caller, referenceUrl) => {\n                if (scriptId === remote_name) {\n                    return { url: remoteUrl };\n                }\n                if (referenceUrl && caller === remote_name) {\n                    const publicPath = remoteUrl.split('/').slice(0, -1).join('/');\n                    const bundlePath = scriptId + referenceUrl.split(scriptId)[1];\n                    return { url: publicPath + '/' + bundlePath };\n                }\n                return;\n            }, { key: remote_name });\n            if (typeof _win[remote_name] !== 'undefined') {\n                return resolve(_win[remote_name]);\n            }\n            if (typeof __webpack_require__ !== 'undefined' &&\n                typeof __webpack_require__.l === 'function' &&\n                // @ts-expect-error - library_type is inherited enum type instead of string\n                library_type !== 'self') {\n                // @ts-expect-error temp\n                __webpack_require__.l(remote_entry_url, () => {\n                    resolve(_win[remote_name]);\n                }, remote_name\n                // remote_name\n                );\n                return;\n            }\n            return new Function(`return import(\"${remoteUrl}\")`)()\n                .then((mod) => {\n                if (typeof _win[remote_name] !== 'undefined') {\n                    return resolve(_win[remote_name]);\n                }\n                return resolve(mod);\n            })\n                .catch((err) => {\n                reject(err);\n            });\n        })\n            .catch((err) => {\n            console.error(`Zephyr: error loading remote entry ${remote_entry_url}`, err);\n        });\n    })"
+              },
+              "shared": {
+                "react": {
+                  "singleton": true,
+                  "eager": true,
+                  "requiredVersion": "18.3.1"
+                },
+                "react-native": {
+                  "singleton": true,
+                  "eager": true,
+                  "requiredVersion": "0.76.6"
+                },
+                "@react-navigation/native": {
+                  "singleton": true,
+                  "eager": true,
+                  "requiredVersion": "6.1.18"
+                },
+                "@react-navigation/native-stack": {
+                  "singleton": true,
+                  "eager": true,
+                  "requiredVersion": "6.11.0"
+                },
+                "react-native-paper": {
+                  "singleton": true,
+                  "eager": true,
+                  "requiredVersion": "5.12.5"
+                },
+                "react-native-safe-area-context": {
+                  "singleton": true,
+                  "eager": true,
+                  "requiredVersion": "4.12.0"
+                },
+                "react-native-screens": {
+                  "singleton": true,
+                  "eager": true,
+                  "requiredVersion": "3.35.0"
+                },
+                "react-native-vector-icons": {
+                  "singleton": true,
+                  "eager": true,
+                  "requiredVersion": "10.2.0"
+                },
+                "@module-federation/enhanced": {
+                  "singleton": true,
+                  "eager": true,
+                  "requiredVersion": "0.6.13"
+                },
+                "react-native-mmkv": {
+                  "singleton": true,
+                  "eager": true,
+                  "requiredVersion": "3.1.0"
+                },
+                "react-native-localize": {
+                  "singleton": true,
+                  "eager": true,
+                  "requiredVersion": "3.3.0"
+                },
+                "mobile-core": {
+                  "singleton": true,
+                  "eager": true,
+                  "requiredVersion": "0.0.1"
+                },
+                "lottie-react-native": {
+                  "singleton": true,
+                  "eager": true,
+                  "requiredVersion": "7.2.2"
+                },
+                "react-native-config": {
+                  "singleton": true,
+                  "eager": true,
+                  "requiredVersion": "1.5.3"
+                },
+                "react-native-screen-corner-radius": {
+                  "singleton": true,
+                  "eager": true,
+                  "requiredVersion": "0.2.2"
+                }
+              },
+              "runtimePlugins": [
+                "/Users/boris.yankov/code/zephyr-repack-example/apps/mobile-host/src/custom-runtime-plugin.ts"
+              ]
+            },
+            "deepImports": true,
+            "defaultRuntimePlugins": [
+              "@callstack/repack/mf/core-plugin",
+              "@callstack/repack/mf/resolver-plugin"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

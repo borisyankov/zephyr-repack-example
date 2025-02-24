@@ -5,11 +5,14 @@ import {getSharedDependencies} from 'mobile-sdk';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {withZephyr} from 'zephyr-repack-plugin';
+import fs from 'node:fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const USE_ZEPHYR = Boolean(process.env.ZC);
+const USE_ZEPHYR = false; // Boolean(process.env.ZC);
+
+import {RemotesLocal, RemotesV1, RemotesV2} from './mock-zephyr-api.mjs';
 
 /**
  * More documentation, installation, usage, motivation and differences with Metro is available at:
@@ -53,13 +56,11 @@ export default env => {
       new Repack.plugins.ModuleFederationPluginV2({
         name: 'MobileHost',
         dts: false,
-        remotes: {
-          MobileCart: `MobileCart@http://localhost:9000/${platform}/MobileCart.container.js.bundle`,
-          MobileInventory: `MobileInventory@http://localhost:9001/${platform}/MobileInventory.container.js.bundle`,
-          MobileCheckout: `MobileCheckout@http://localhost:9002/${platform}/MobileCheckout.container.js.bundle`,
-          MobileOrders: `MobileOrders@http://localhost:9003/${platform}/MobileOrders.container.js.bundle`,
-        },
+        remotes: RemotesLocal, // USE_ZEPHYR ? RemotesV1 : RemotesLocal,
         shared: getSharedDependencies({eager: true}),
+        runtimePlugins: [
+          path.resolve(__dirname, './src/custom-runtime-plugin.ts'),
+        ],
       }),
       new rspack.IgnorePlugin({
         resourceRegExp: /^@react-native-masked-view/,
@@ -77,9 +78,23 @@ export default env => {
     );
   }
 
-  if (USE_ZEPHYR) {
-    return withZephyr()(config);
-  }
+  // fs.writeFileSync(
+  //   path.join(__dirname, `rspack.config.${platform}.json`),
+  //   JSON.stringify(config, null, 2),
+  //   'utf8',
+  // );
+  // (async () => {
+  //   const after = await withZephyr()(config);
+  //   fs.writeFileSync(
+  //     path.join(__dirname, `rspack.zephyr.${platform}.json`),
+  //     JSON.stringify(after, null, 2),
+  //     'utf8',
+  //   );
+  // })();
+
+  // if (USE_ZEPHYR) {
+  //   return withZephyr()(config);
+  // }
 
   return config;
 };

@@ -1,10 +1,13 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 
-import {Icon, Text} from 'react-native-paper';
+import {Button, Icon, Text} from 'react-native-paper';
 
 import {useTheme} from '../hooks';
 import {ModuleBoundary} from './ModuleBoundary';
+
+import {init, registerRemotes} from '@module-federation/runtime';
+import mfConfig from '../../../../../apps/mobile-host/module-federation.config.v1.mjs';
 
 type Props = {
   icon: string;
@@ -15,14 +18,30 @@ type Props = {
 export function EmptyScreen({icon, title, boundaryColor}: Props) {
   const theme = useTheme();
 
+  const switchRemotes = () => {
+    registerRemotes(
+      [
+        {
+          name: 'MobileInventory',
+          entry:
+            'MobileInventory@https://boris-yankov-jfrpliow5v-138-mobileinventory-zephy-521bff6e6-ze.zephyrcloud.app/MobileInventory.container.js.bundle',
+        },
+      ],
+      {force: true},
+    );
+    //
+    // init({...mfConfig, force: true});
+  };
+
   return (
     <ModuleBoundary withTopRadius color={boundaryColor}>
       <View
         style={[styles.container, {backgroundColor: theme.colors.background}]}>
-        <Icon source={icon} size={100} />
+        <Button onPress={switchRemotes}>Switch Remotes</Button>
+        {/* <Icon source={icon} size={100} />
         <Text style={styles.title} variant="titleLarge">
           {title}
-        </Text>
+        </Text> */}
       </View>
     </ModuleBoundary>
   );

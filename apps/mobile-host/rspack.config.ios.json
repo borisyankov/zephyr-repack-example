@@ -1,0 +1,525 @@
+{
+  "mode": "development",
+  "context": "/Users/boris.yankov/code/zephyr-repack-example/apps/mobile-host",
+  "entry": "./index.js",
+  "experiments": {
+    "incremental": true
+  },
+  "resolve": {
+    "mainFields": [
+      "react-native",
+      "browser",
+      "main"
+    ],
+    "aliasFields": [
+      "react-native",
+      "browser",
+      "main"
+    ],
+    "conditionNames": [],
+    "exportsFields": [],
+    "extensions": [
+      ".[platform].js",
+      ".native.js",
+      ".js",
+      ".[platform].jsx",
+      ".native.jsx",
+      ".jsx",
+      ".[platform].ts",
+      ".native.ts",
+      ".ts",
+      ".[platform].tsx",
+      ".native.tsx",
+      ".tsx",
+      ".[platform].json",
+      ".native.json",
+      ".json"
+    ],
+    "extensionAlias": {
+      ".bmp": [
+        "@0.75x.bmp",
+        "@1x.bmp",
+        "@1.5x.bmp",
+        "@2x.bmp",
+        "@3x.bmp",
+        "@4x.bmp",
+        ".bmp"
+      ],
+      ".gif": [
+        "@0.75x.gif",
+        "@1x.gif",
+        "@1.5x.gif",
+        "@2x.gif",
+        "@3x.gif",
+        "@4x.gif",
+        ".gif"
+      ],
+      ".jpg": [
+        "@0.75x.jpg",
+        "@1x.jpg",
+        "@1.5x.jpg",
+        "@2x.jpg",
+        "@3x.jpg",
+        "@4x.jpg",
+        ".jpg"
+      ],
+      ".jpeg": [
+        "@0.75x.jpeg",
+        "@1x.jpeg",
+        "@1.5x.jpeg",
+        "@2x.jpeg",
+        "@3x.jpeg",
+        "@4x.jpeg",
+        ".jpeg"
+      ],
+      ".png": [
+        "@0.75x.png",
+        "@1x.png",
+        "@1.5x.png",
+        "@2x.png",
+        "@3x.png",
+        "@4x.png",
+        ".png"
+      ],
+      ".psd": [
+        "@0.75x.psd",
+        "@1x.psd",
+        "@1.5x.psd",
+        "@2x.psd",
+        "@3x.psd",
+        "@4x.psd",
+        ".psd"
+      ],
+      ".svg": [
+        "@0.75x.svg",
+        "@1x.svg",
+        "@1.5x.svg",
+        "@2x.svg",
+        "@3x.svg",
+        "@4x.svg",
+        ".svg"
+      ],
+      ".webp": [
+        "@0.75x.webp",
+        "@1x.webp",
+        "@1.5x.webp",
+        "@2x.webp",
+        "@3x.webp",
+        "@4x.webp",
+        ".webp"
+      ],
+      ".tiff": [
+        "@0.75x.tiff",
+        "@1x.tiff",
+        "@1.5x.tiff",
+        "@2x.tiff",
+        "@3x.tiff",
+        "@4x.tiff",
+        ".tiff"
+      ]
+    },
+    "importsFields": []
+  },
+  "output": {
+    "uniqueName": "mobile-host"
+  },
+  "module": {
+    "rules": [
+      {
+        "type": "javascript/auto",
+        "test": {},
+        "oneOf": [
+          {
+            "test": {},
+            "use": {
+              "loader": "builtin:swc-loader",
+              "options": {
+                "env": {
+                  "targets": {
+                    "node": 24
+                  },
+                  "include": [
+                    "transform-block-scoping",
+                    "transform-class-properties",
+                    "transform-private-methods",
+                    "transform-private-property-in-object",
+                    "transform-classes",
+                    "transform-destructuring",
+                    "transform-async-to-generator",
+                    "transform-async-generator-functions",
+                    "transform-unicode-regex",
+                    "transform-named-capturing-groups-regex",
+                    "transform-optional-chaining",
+                    "transform-spread",
+                    "transform-object-rest-spread",
+                    "transform-class-static-block"
+                  ]
+                },
+                "jsc": {
+                  "assumptions": {
+                    "setPublicClassFields": true,
+                    "privateFieldsAsProperties": true
+                  },
+                  "externalHelpers": true,
+                  "parser": {
+                    "syntax": "ecmascript",
+                    "jsx": true,
+                    "exportDefaultFrom": true
+                  },
+                  "transform": {
+                    "react": {
+                      "runtime": "automatic",
+                      "development": false,
+                      "importSource": "react"
+                    }
+                  }
+                },
+                "module": {
+                  "type": "commonjs",
+                  "strict": false,
+                  "strictMode": false,
+                  "noInterop": false,
+                  "lazy": false,
+                  "allowTopLevelThis": true,
+                  "ignoreDynamic": true
+                }
+              }
+            }
+          },
+          {
+            "test": {},
+            "use": {
+              "loader": "builtin:swc-loader",
+              "options": {
+                "env": {
+                  "targets": {
+                    "node": 24
+                  },
+                  "include": [
+                    "transform-block-scoping",
+                    "transform-class-properties",
+                    "transform-private-methods",
+                    "transform-private-property-in-object",
+                    "transform-classes",
+                    "transform-destructuring",
+                    "transform-async-to-generator",
+                    "transform-async-generator-functions",
+                    "transform-unicode-regex",
+                    "transform-named-capturing-groups-regex",
+                    "transform-optional-chaining",
+                    "transform-spread",
+                    "transform-object-rest-spread",
+                    "transform-class-static-block"
+                  ]
+                },
+                "jsc": {
+                  "assumptions": {
+                    "setPublicClassFields": true,
+                    "privateFieldsAsProperties": true
+                  },
+                  "externalHelpers": true,
+                  "parser": {
+                    "syntax": "typescript",
+                    "tsx": true
+                  },
+                  "transform": {
+                    "react": {
+                      "runtime": "automatic",
+                      "development": false,
+                      "importSource": "react"
+                    }
+                  }
+                },
+                "module": {
+                  "type": "commonjs",
+                  "strict": false,
+                  "strictMode": false,
+                  "noInterop": false,
+                  "lazy": false,
+                  "allowTopLevelThis": true,
+                  "ignoreDynamic": true
+                }
+              }
+            }
+          },
+          {
+            "test": {},
+            "use": {
+              "loader": "builtin:swc-loader",
+              "options": {
+                "env": {
+                  "targets": {
+                    "node": 24
+                  },
+                  "include": [
+                    "transform-block-scoping",
+                    "transform-class-properties",
+                    "transform-private-methods",
+                    "transform-private-property-in-object",
+                    "transform-classes",
+                    "transform-destructuring",
+                    "transform-async-to-generator",
+                    "transform-async-generator-functions",
+                    "transform-unicode-regex",
+                    "transform-named-capturing-groups-regex",
+                    "transform-optional-chaining",
+                    "transform-spread",
+                    "transform-object-rest-spread",
+                    "transform-class-static-block"
+                  ]
+                },
+                "jsc": {
+                  "assumptions": {
+                    "setPublicClassFields": true,
+                    "privateFieldsAsProperties": true
+                  },
+                  "externalHelpers": true,
+                  "parser": {
+                    "syntax": "typescript",
+                    "tsx": true
+                  },
+                  "transform": {
+                    "react": {
+                      "runtime": "automatic",
+                      "development": false,
+                      "importSource": "react"
+                    }
+                  }
+                },
+                "module": {
+                  "type": "commonjs",
+                  "strict": false,
+                  "strictMode": false,
+                  "noInterop": false,
+                  "lazy": false,
+                  "allowTopLevelThis": true,
+                  "ignoreDynamic": true
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "javascript/auto",
+        "test": {},
+        "include": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {}
+        ],
+        "exclude": [],
+        "use": {
+          "loader": "@callstack/repack/flow-loader",
+          "options": {
+            "all": true,
+            "ignoreUninitializedFields": false
+          }
+        }
+      },
+      {
+        "type": "javascript/auto",
+        "test": {},
+        "use": {
+          "loader": "babel-loader",
+          "options": {
+            "babelrc": false,
+            "configFile": false,
+            "parserOpts": {
+              "flow": "all"
+            },
+            "plugins": [
+              "babel-plugin-syntax-hermes-parser",
+              [
+                "@babel/plugin-syntax-typescript",
+                false
+              ],
+              "@react-native/babel-plugin-codegen"
+            ],
+            "overrides": [
+              {
+                "test": {},
+                "plugins": [
+                  [
+                    "@babel/plugin-syntax-typescript",
+                    {
+                      "isTSX": false,
+                      "allowNamespaces": true
+                    }
+                  ]
+                ]
+              },
+              {
+                "test": {},
+                "plugins": [
+                  [
+                    "@babel/plugin-syntax-typescript",
+                    {
+                      "isTSX": true,
+                      "allowNamespaces": true
+                    }
+                  ]
+                ]
+              }
+            ],
+            "sourceMaps": true
+          }
+        }
+      },
+      {
+        "test": {},
+        "use": {
+          "loader": "@callstack/repack/assets-loader",
+          "options": {}
+        }
+      }
+    ]
+  },
+  "plugins": [
+    {
+      "config": {
+        "logger": {}
+      }
+    },
+    {
+      "config": {
+        "name": "MobileHost",
+        "dts": false,
+        "remotes": {
+          "MobileCart": "MobileCart@http://localhost:9000/ios/MobileCart.container.js.bundle",
+          "MobileInventory": "MobileInventory@http://localhost:9001/ios/MobileInventory.container.js.bundle",
+          "MobileCheckout": "MobileCheckout@http://localhost:9002/ios/MobileCheckout.container.js.bundle",
+          "MobileOrders": "MobileOrders@http://localhost:9003/ios/MobileOrders.container.js.bundle"
+        },
+        "shared": {
+          "react": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "18.3.1"
+          },
+          "react-native": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "0.76.6"
+          },
+          "@react-navigation/native": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "6.1.18"
+          },
+          "@react-navigation/native-stack": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "6.11.0"
+          },
+          "react-native-paper": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "5.12.5"
+          },
+          "react-native-safe-area-context": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "4.12.0"
+          },
+          "react-native-screens": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "3.35.0"
+          },
+          "react-native-vector-icons": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "10.2.0"
+          },
+          "@module-federation/enhanced": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "0.6.13"
+          },
+          "react-native-mmkv": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "3.1.0"
+          },
+          "react-native-localize": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "3.3.0"
+          },
+          "mobile-core": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "0.0.1"
+          },
+          "lottie-react-native": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "7.2.2"
+          },
+          "react-native-config": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "1.5.3"
+          },
+          "react-native-screen-corner-radius": {
+            "singleton": true,
+            "eager": true,
+            "requiredVersion": "0.2.2"
+          }
+        },
+        "runtimePlugins": [
+          "/Users/boris.yankov/code/zephyr-repack-example/apps/mobile-host/src/custom-runtime-plugin.ts"
+        ]
+      },
+      "deepImports": true,
+      "defaultRuntimePlugins": [
+        "@callstack/repack/mf/core-plugin",
+        "@callstack/repack/mf/resolver-plugin"
+      ]
+    },
+    {
+      "name": "IgnorePlugin",
+      "_args": [
+        {
+          "resourceRegExp": {}
+        }
+      ]
+    }
+  ]
+}

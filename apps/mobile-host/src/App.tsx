@@ -13,6 +13,10 @@ import {
 import AnimatedBootSplash from './components/AnimatedBootSplash';
 import MainNavigator from './navigation/MainNavigator';
 
+// import {init} from '@module-federation/runtime';
+// import mfConfig from '../module-federation.config.mjs';
+// init(mfConfig);
+
 LogBox.ignoreAllLogs();
 
 const App = () => {
