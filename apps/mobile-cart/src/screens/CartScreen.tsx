@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, FlatList, StyleSheet, View} from 'react-native';
+import {FlatList, StyleSheet, View} from 'react-native';
 
 import {
   ActivityIndicator,
@@ -12,19 +12,17 @@ import {
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 import CartItem from '../components/CartItem';
-import ErrorBoundary from '../components/ErrorBoundary';
-
-const CheckoutSection = React.lazy(
-  // @ts-ignore federated dts not enabled yet
-  // eslint-disable-next-line import/no-unresolved
-  () => import('MobileCheckout/CheckoutSection'),
-);
 
 type Props = {
   onCheckoutSuccess: () => void;
 };
 
 export default function CartScreen({onCheckoutSuccess}: Props) {
+  const CheckoutSection = useRemote({
+    scope: 'MobileCheckout',
+    module: 'CheckoutSection',
+  });
+
   const {t} = useTranslation('cart');
   const {top} = useSafeAreaInsets();
   const {items} = useCartStore();
@@ -57,11 +55,10 @@ export default function CartScreen({onCheckoutSuccess}: Props) {
           )}
         />
         <View style={styles.checkoutContainer}>
-          <ErrorBoundary name="CheckoutSuccessScreen">
-            <React.Suspense fallback={<ActivityIndicator />}>
-              <CheckoutSection onCheckoutSuccess={onCheckoutSuccess} />
-            </React.Suspense>
-          </ErrorBoundary>
+          <CheckoutSection
+            fallback={<ActivityIndicator />}
+            onCheckoutSuccess={onCheckoutSuccess}
+          />
         </View>
       </View>
     </ModuleBoundary>
@@ -87,3 +84,6 @@ const styles = StyleSheet.create({
     right: 0,
   },
 });
+function useRemote(arg0: {scope: string; module: string}) {
+  throw new Error('Function not implemented.');
+}
