@@ -21,7 +21,7 @@
     "adbreverse:standalone": "adb reverse tcp:8081 tcp:8081"
   },
   "dependencies": {
-    "@module-federation/enhanced": "0.6.13",
+    "@module-federation/enhanced": "0.9.1",
     "@react-navigation/native": "6.1.18",
     "@react-navigation/native-stack": "6.11.0",
     "lottie-react-native": "7.2.2",
@@ -48,7 +48,7 @@
     "@babel/preset-env": "^7.25.3",
     "@babel/runtime": "^7.25.0",
     "@callstack/eslint-config": "^15.0.0",
-    "@callstack/repack": "5.0.0-rc.12",
+    "@callstack/repack": "5.0.0",
     "@react-native-community/cli": "^15.1.2",
     "@react-native/babel-preset": "0.76.6",
     "@react-native/eslint-config": "0.76.6",
